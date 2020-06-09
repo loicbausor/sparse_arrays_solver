@@ -1,12 +1,12 @@
 class QueryBuilder:
     def __init__(self, query, strings):
         """Constructor of the class. Creates the attributes of the class and checks
-         if the constraints are respected.
+         if the constraints are respected (see doc).
         Inputs :
             :query: A list containing strings. Corresponds to the query the user wants to do.
-                    This arguments must match the constraints of the SparseArray problem (see doc).
+                    This arguments must match the constraints of the "Sparse Arrays" problem (see doc).
             :strings: A list containing strings. Corresponds to the array the user wants to search into.
-                    This arguments must match the constraints of the SparseArray problem (see doc).
+                    This arguments must match the constraints of the "Sparse Arrays" problem (see doc).
         """
 
         # Checks if the constraints are respected for the two inputs
@@ -38,9 +38,9 @@ class QueryBuilder:
 
     def search(self):
 
-        """Searches for the number of occurrences of each strings of the query in the strings attribute.
+        """Searches for the number of occurrences of each queries in the strings attribute.
         Returns :
-            :query_result: A dictionary like {string_query : string_occurrence}
+            :query_result: A dictionary with {string_query : string_occurrence}
         """
 
         query_results = dict()
